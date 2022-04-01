@@ -58,7 +58,7 @@ class About extends Me
         ];
     }
 
-    public function isAvailableToHire(): bool
+    public function isAvailableForHire(): bool
     {
         return $current_salary * 3 ?? false;
     }
