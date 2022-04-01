@@ -58,10 +58,11 @@ class About extends Me
         ];
     }
 
-    public function isAvailableForHire(): bool
+    public function isAvailableToHire($salary_offered, $salary_current): bool
     {
-        return $current_salary * 3 ?? false;
+        return $salary_offered >= $salary_current  * 5 ?? false;
     }
 }
+
 
 ```
